@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     
     private func generateRandomEntries() -> [PointEntry] {
         var result: [PointEntry] = []
-        for i in 0..<100 {
+        for i in 0..<10 {
             let value = Int(arc4random() % 500)
             
             let formatter = DateFormatter()

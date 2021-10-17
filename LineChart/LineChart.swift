@@ -101,7 +101,7 @@ class LineChart: UIView {
     }
     
     override func layoutSubviews() {
-        scrollView.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
+        scrollView.frame = CGRect(x: 0, y: 0, width: self.frame.size.width - 30, height: self.frame.size.height)
         if let dataEntries = dataEntries {
             scrollView.contentSize = CGSize(width: CGFloat(dataEntries.count) * lineGap, height: self.frame.size.height)
             mainLayer.frame = CGRect(x: 0, y: 0, width: CGFloat(dataEntries.count) * lineGap, height: self.frame.size.height)
@@ -227,7 +227,10 @@ class LineChart: UIView {
             dataEntries.count > 0 {
             for i in 0..<dataEntries.count {
                 let textLayer = CATextLayer()
-                textLayer.frame = CGRect(x: lineGap*CGFloat(i) - lineGap/2 + 40, y: mainLayer.frame.size.height - bottomSpace/2 - 8, width: lineGap, height: 16)
+                textLayer.frame = CGRect(x: lineGap*CGFloat(i) - lineGap/2 + 40,
+                                         y: mainLayer.frame.size.height - bottomSpace/2 - 8,
+                                         width: lineGap,
+                                         height: 16)
                 textLayer.foregroundColor = #colorLiteral(red: 0.5019607843, green: 0.6784313725, blue: 0.8078431373, alpha: 1).cgColor
                 textLayer.backgroundColor = UIColor.clear.cgColor
                 textLayer.alignmentMode = CATextLayerAlignmentMode.center
@@ -241,7 +244,7 @@ class LineChart: UIView {
     }
     
     /**
-     Create horizontal lines (grid lines) and show the value of each line
+     Create horizontal lines (grid lines) and show the value on the left of each line
      */
     private func drawHorizontalLines() {
         guard let dataEntries = dataEntries else {
@@ -257,10 +260,11 @@ class LineChart: UIView {
         if let gridValues = gridValues {
             for value in gridValues {
                 let height = value * gridLayer.frame.size.height
+                let width = gridLayer.frame.size.width
                 
                 let path = UIBezierPath()
                 path.move(to: CGPoint(x: 0, y: height))
-                path.addLine(to: CGPoint(x: gridLayer.frame.size.width, y: height))
+                path.addLine(to: CGPoint(x: width, y: height))
                 
                 let lineLayer = CAShapeLayer()
                 lineLayer.path = path.cgPath
@@ -282,7 +286,8 @@ class LineChart: UIView {
                 }
                 
                 let textLayer = CATextLayer()
-                textLayer.frame = CGRect(x: 4, y: height, width: 50, height: 16)
+//                textLayer.frame = CGRect(x: 4, y: height, width: 50, height: 16)
+                textLayer.frame = CGRect(x: width - 30, y: height, width: 50, height: 16)
                 textLayer.foregroundColor = #colorLiteral(red: 0.5019607843, green: 0.6784313725, blue: 0.8078431373, alpha: 1).cgColor
                 textLayer.backgroundColor = UIColor.clear.cgColor
                 textLayer.contentsScale = UIScreen.main.scale
