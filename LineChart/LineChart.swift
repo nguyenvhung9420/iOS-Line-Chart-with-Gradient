@@ -146,15 +146,29 @@ class LineChart: UIView {
      Draw a zigzag line connecting all points in dataPoints
      */
     private func drawChart() {
-        if let dataPoints = dataPoints,
-            dataPoints.count > 0,
-            let path = createPath() {
-            
+        
+        if let dataPoints = dataPoints, dataPoints.count > 0, let path = createPath() {
             let lineLayer = CAShapeLayer()
             lineLayer.path = path.cgPath
             lineLayer.strokeColor = UIColor.white.cgColor
             lineLayer.fillColor = UIColor.clear.cgColor
             dataLayer.addSublayer(lineLayer)
+            
+            addFloatingLabels()
+        }
+    }
+    
+    /**
+     Create a zigzag bezier path that connects all points in dataPoints
+     */
+    private func addFloatingLabels() {
+        if let dataPoints = dataPoints, dataPoints.count > 0 {
+            for point in dataPoints {
+                let aRect = CGRect(origin: point, size: CGSize(width: 20.0, height: 20.0))
+                let uiView = UIView(frame: aRect)
+                uiView.backgroundColor = .white
+                self.addSubview(uiView)
+            }
         }
     }
 
@@ -188,6 +202,7 @@ class LineChart: UIView {
             lineLayer.fillColor = UIColor.clear.cgColor
             dataLayer.addSublayer(lineLayer)
         }
+        self.addFloatingLabels()
     }
     
     /**
