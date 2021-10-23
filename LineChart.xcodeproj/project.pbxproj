@@ -3,10 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E8A78F22723A56D0082CDBB /* WithChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A78F02723A56D0082CDBB /* WithChartTableViewCell.swift */; };
+		0E8A78F32723A56D0082CDBB /* WithChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A78F12723A56D0082CDBB /* WithChartTableViewCell.xib */; };
+		0E8A78F62723EBF70082CDBB /* ChartInCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A78F42723EBF70082CDBB /* ChartInCellViewController.swift */; };
+		0E8A78F72723EBF70082CDBB /* ChartInCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A78F52723EBF70082CDBB /* ChartInCellViewController.xib */; };
+		0EF09CE3271D232E00CA50E6 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF09CE1271D232E00CA50E6 /* LineChartViewController.swift */; };
+		0EF09CE4271D232E00CA50E6 /* LineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF09CE2271D232E00CA50E6 /* LineChartViewController.xib */; };
+		0EF09CE6271D26E200CA50E6 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF09CE5271D26E100CA50E6 /* DemoBaseViewController.swift */; };
+		0EF09CEB271D295C00CA50E6 /* RadarMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF09CE9271D295B00CA50E6 /* RadarMarkerView.swift */; };
+		0EF09CED271D297500CA50E6 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF09CEC271D297500CA50E6 /* BalloonMarker.swift */; };
+		0EF09CF5271D2C0A00CA50E6 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 0EF09CF4271D2C0A00CA50E6 /* Algorithms */; };
+		0EF09CF8271D2C2D00CA50E6 /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = 0EF09CF7271D2C2D00CA50E6 /* ComplexModule */; };
+		0EF09CFA271D2C2D00CA50E6 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = 0EF09CF9271D2C2D00CA50E6 /* Numerics */; };
+		0EF09CFC271D2C2D00CA50E6 /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = 0EF09CFB271D2C2D00CA50E6 /* RealModule */; };
+		496B814D137F8A7D8DC56085 /* Pods_LineChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1263D1A60583391EDD4368 /* Pods_LineChart.framework */; };
 		D702DD4E1F4FC52C0057F54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702DD4D1F4FC52C0057F54F /* AppDelegate.swift */; };
 		D702DD501F4FC52C0057F54F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702DD4F1F4FC52C0057F54F /* ViewController.swift */; };
 		D702DD531F4FC52C0057F54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D702DD511F4FC52C0057F54F /* Main.storyboard */; };
@@ -17,7 +31,32 @@
 		D7D39561229796E9006817B8 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D39560229796E9006817B8 /* DotCALayer.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0EF09D14271D314700CA50E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E8A78F02723A56D0082CDBB /* WithChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithChartTableViewCell.swift; sourceTree = "<group>"; };
+		0E8A78F12723A56D0082CDBB /* WithChartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithChartTableViewCell.xib; sourceTree = "<group>"; };
+		0E8A78F42723EBF70082CDBB /* ChartInCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartInCellViewController.swift; sourceTree = "<group>"; };
+		0E8A78F52723EBF70082CDBB /* ChartInCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartInCellViewController.xib; sourceTree = "<group>"; };
+		0EF09CE1271D232E00CA50E6 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		0EF09CE2271D232E00CA50E6 /* LineChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineChartViewController.xib; sourceTree = "<group>"; };
+		0EF09CE5271D26E100CA50E6 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
+		0EF09CE9271D295B00CA50E6 /* RadarMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarMarkerView.swift; sourceTree = "<group>"; };
+		0EF09CEC271D297500CA50E6 /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		7E1263D1A60583391EDD4368 /* Pods_LineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE5470D11693AA6D73BECE0 /* Pods-LineChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart.release.xcconfig"; path = "Target Support Files/Pods-LineChart/Pods-LineChart.release.xcconfig"; sourceTree = "<group>"; };
+		9CAAC931D629B81E146BE725 /* Pods-LineChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart.debug.xcconfig"; path = "Target Support Files/Pods-LineChart/Pods-LineChart.debug.xcconfig"; sourceTree = "<group>"; };
 		D702DD4A1F4FC52C0057F54F /* LineChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D702DD4D1F4FC52C0057F54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D702DD4F1F4FC52C0057F54F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +74,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF09CF8271D2C2D00CA50E6 /* ComplexModule in Frameworks */,
+				0EF09CF5271D2C0A00CA50E6 /* Algorithms in Frameworks */,
+				0EF09CFC271D2C2D00CA50E6 /* RealModule in Frameworks */,
+				496B814D137F8A7D8DC56085 /* Pods_LineChart.framework in Frameworks */,
+				0EF09CFA271D2C2D00CA50E6 /* Numerics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01E6112E926A6BDB51ECFB82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CAAC931D629B81E146BE725 /* Pods-LineChart.debug.xcconfig */,
+				8CE5470D11693AA6D73BECE0 /* Pods-LineChart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0EF09CE7271D295B00CA50E6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0EF09CEC271D297500CA50E6 /* BalloonMarker.swift */,
+				0EF09CE9271D295B00CA50E6 /* RadarMarkerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70E8EA33C4E784C6DB23D5E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E1263D1A60583391EDD4368 /* Pods_LineChart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D702DD411F4FC52C0057F54F = {
 			isa = PBXGroup;
 			children = (
 				D702DD4C1F4FC52C0057F54F /* LineChart */,
 				D702DD4B1F4FC52C0057F54F /* Products */,
+				01E6112E926A6BDB51ECFB82 /* Pods */,
+				70E8EA33C4E784C6DB23D5E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +141,14 @@
 				D702DD541F4FC52C0057F54F /* Assets.xcassets */,
 				D702DD561F4FC52C0057F54F /* LaunchScreen.storyboard */,
 				D702DD591F4FC52C0057F54F /* Info.plist */,
+				0EF09CE1271D232E00CA50E6 /* LineChartViewController.swift */,
+				0EF09CE5271D26E100CA50E6 /* DemoBaseViewController.swift */,
+				0EF09CE2271D232E00CA50E6 /* LineChartViewController.xib */,
+				0EF09CE7271D295B00CA50E6 /* Components */,
+				0E8A78F02723A56D0082CDBB /* WithChartTableViewCell.swift */,
+				0E8A78F12723A56D0082CDBB /* WithChartTableViewCell.xib */,
+				0E8A78F42723EBF70082CDBB /* ChartInCellViewController.swift */,
+				0E8A78F52723EBF70082CDBB /* ChartInCellViewController.xib */,
 			);
 			path = LineChart;
 			sourceTree = "<group>";
@@ -80,15 +160,24 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D702DD5C1F4FC52C0057F54F /* Build configuration list for PBXNativeTarget "LineChart" */;
 			buildPhases = (
+				C30CA3815245474F972E6B83 /* [CP] Check Pods Manifest.lock */,
 				D702DD461F4FC52C0057F54F /* Sources */,
 				D702DD471F4FC52C0057F54F /* Frameworks */,
 				D702DD481F4FC52C0057F54F /* Resources */,
+				0EF09D14271D314700CA50E6 /* Embed Frameworks */,
+				AB46DC0B94F8BBA5254C341C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LineChart;
+			packageProductDependencies = (
+				0EF09CF4271D2C0A00CA50E6 /* Algorithms */,
+				0EF09CF7271D2C2D00CA50E6 /* ComplexModule */,
+				0EF09CF9271D2C2D00CA50E6 /* Numerics */,
+				0EF09CFB271D2C2D00CA50E6 /* RealModule */,
+			);
 			productName = LineChart;
 			productReference = D702DD4A1F4FC52C0057F54F /* LineChart.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +208,10 @@
 				Base,
 			);
 			mainGroup = D702DD411F4FC52C0057F54F;
+			packageReferences = (
+				0EF09CF3271D2C0A00CA50E6 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				0EF09CF6271D2C2D00CA50E6 /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
 			productRefGroup = D702DD4B1F4FC52C0057F54F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,12 +227,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				D702DD581F4FC52C0057F54F /* LaunchScreen.storyboard in Resources */,
+				0EF09CE4271D232E00CA50E6 /* LineChartViewController.xib in Resources */,
+				0E8A78F32723A56D0082CDBB /* WithChartTableViewCell.xib in Resources */,
 				D702DD551F4FC52C0057F54F /* Assets.xcassets in Resources */,
+				0E8A78F72723EBF70082CDBB /* ChartInCellViewController.xib in Resources */,
 				D702DD531F4FC52C0057F54F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB46DC0B94F8BBA5254C341C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C30CA3815245474F972E6B83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LineChart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D702DD461F4FC52C0057F54F /* Sources */ = {
@@ -147,10 +286,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D39561229796E9006817B8 /* DotCALayer.swift in Sources */,
+				0EF09CE3271D232E00CA50E6 /* LineChartViewController.swift in Sources */,
 				D702DD641F506FE80057F54F /* LineChart.swift in Sources */,
+				0EF09CEB271D295C00CA50E6 /* RadarMarkerView.swift in Sources */,
 				D702DD501F4FC52C0057F54F /* ViewController.swift in Sources */,
+				0EF09CE6271D26E200CA50E6 /* DemoBaseViewController.swift in Sources */,
+				0E8A78F22723A56D0082CDBB /* WithChartTableViewCell.swift in Sources */,
 				D702DD4E1F4FC52C0057F54F /* AppDelegate.swift in Sources */,
 				D702DD621F5060710057F54F /* CurveAlgorithm.swift in Sources */,
+				0E8A78F62723EBF70082CDBB /* ChartInCellViewController.swift in Sources */,
+				0EF09CED271D297500CA50E6 /* BalloonMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +324,7 @@
 		D702DD5A1F4FC52C0057F54F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -239,6 +385,7 @@
 		D702DD5B1F4FC52C0057F54F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -283,7 +430,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -291,27 +439,39 @@
 		};
 		D702DD5D1F4FC52C0057F54F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CAAC931D629B81E146BE725 /* Pods-LineChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9TZTHJXX2D;
 				INFOPLIST_FILE = LineChart/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = leonard.LineChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D702DD5E1F4FC52C0057F54F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CE5470D11693AA6D73BECE0 /* Pods-LineChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9TZTHJXX2D;
 				INFOPLIST_FILE = LineChart/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = leonard.LineChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -337,6 +497,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0EF09CF3271D2C0A00CA50E6 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		0EF09CF6271D2C2D00CA50E6 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EF09CF4271D2C0A00CA50E6 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EF09CF3271D2C0A00CA50E6 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		0EF09CF7271D2C2D00CA50E6 /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EF09CF6271D2C2D00CA50E6 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+		0EF09CF9271D2C2D00CA50E6 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EF09CF6271D2C2D00CA50E6 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		0EF09CFB271D2C2D00CA50E6 /* RealModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EF09CF6271D2C2D00CA50E6 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = RealModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D702DD421F4FC52C0057F54F /* Project object */;
 }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,28 +20,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oud-5o-amy" customClass="LineChart" customModule="LineChart" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="30" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="10" width="375" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="W7g-fO-P6q"/>
+                                    <constraint firstAttribute="height" constant="250" id="W7g-fO-P6q"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-wa-pxC" customClass="LineChart" customModule="LineChart" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="360" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="290" width="375" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Vit-IV-VmP"/>
+                                    <constraint firstAttribute="height" constant="250" id="Vit-IV-VmP"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82L-sw-BMO">
+                                <rect key="frame" x="160.5" y="586" width="54" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="navToNextScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6L9-Bk-JBA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="I1u-wa-pxC" secondAttribute="trailing" id="2xg-nz-weY"/>
                             <constraint firstItem="Oud-5o-amy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="EJj-B8-GpA"/>
                             <constraint firstAttribute="trailing" secondItem="Oud-5o-amy" secondAttribute="trailing" id="NBR-S7-rGk"/>
+                            <constraint firstItem="82L-sw-BMO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O5b-kZ-b8h"/>
                             <constraint firstItem="Oud-5o-amy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pk3-gs-KLm"/>
                             <constraint firstItem="I1u-wa-pxC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lXz-S9-yIU"/>
                             <constraint firstItem="I1u-wa-pxC" firstAttribute="top" secondItem="Oud-5o-amy" secondAttribute="bottom" constant="30" id="qeS-ex-nX5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="82L-sw-BMO" secondAttribute="bottom" constant="50" id="ti1-Yv-goC"/>
                         </constraints>
                     </view>
                     <connections>
@@ -53,6 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="142" y="134"/>
         </scene>
     </scenes>
 </document>

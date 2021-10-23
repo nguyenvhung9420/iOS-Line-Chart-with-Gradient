@@ -28,8 +28,18 @@ class ViewController: UIViewController {
         lineChart.isCurved = false
         
         curvedlineChart.dataEntries = dataEntries
-        curvedlineChart.isCurved = true        
+        curvedlineChart.isCurved = true
+        
+        
+         
     }
+    
+    @IBAction func navToNextScreen(_ sender: UIButton) {
+//        present(LineChartViewController(), animated: true)
+        present(ChartInCellViewController(), animated: true)
+    }
+    
+    
     
     private func generateRandomEntries() -> [PointEntry] {
         var result: [PointEntry] = []
