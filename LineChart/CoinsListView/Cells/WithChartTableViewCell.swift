@@ -30,7 +30,8 @@ class WithChartTableViewCell: UITableViewCell {
     
     func configCell() {
         self.priceLbl?.text = "Hung"
-        self.coinNameLbl?.text = "Hung"
+        self.coinNameLbl?.text = "Ahyhy"
+        self.chartView.delegate = self
     }
     
     func generateData() {
@@ -45,17 +46,17 @@ class WithChartTableViewCell: UITableViewCell {
         let set1 = LineChartDataSet(entries: values, label: "DataSet 1")
         set1.drawIconsEnabled = false
         set1.mode = .cubicBezier
-        set1.lineDashLengths = [5, 2.5]
-        set1.highlightLineDashLengths = [5, 2.5]
+//        set1.lineDashLengths = [5, 2.5]
+//        set1.highlightLineDashLengths = [5, 2.5]
         set1.setColor(.black)
         set1.setCircleColor(.black)
-        set1.lineWidth = 1
-        set1.circleRadius = 3
+        set1.lineWidth = 0.5
+        set1.circleRadius = 5
         set1.drawCircleHoleEnabled = false
-        set1.valueFont = .systemFont(ofSize: 9)
-        set1.formLineDashLengths = [5, 2.5]
-        set1.formLineWidth = 1
-        set1.formSize = 15
+//        set1.valueFont = .systemFont(ofSize: 9)
+//        set1.formLineDashLengths = [5, 2.5]
+//        set1.formLineWidth = 1
+//        set1.formSize = 15
         
         let gradientColors = [ChartColorTemplates.colorFromString("#00ff0000").cgColor,
                               ChartColorTemplates.colorFromString("#ffff0000").cgColor]
@@ -68,7 +69,28 @@ class WithChartTableViewCell: UITableViewCell {
         let data = LineChartData(dataSet: set1)
         
         chartView.data = data
+        chartView.dragXEnabled = true
+        chartView.gridBackgroundColor = .clear
+        
+        set1.drawValuesEnabled = false
+        set1.drawIconsEnabled = false
+        set1.drawCirclesEnabled = false
+        set1.drawCircleHoleEnabled = false
+        set1.drawVerticalHighlightIndicatorEnabled = false
+        set1.drawHorizontalHighlightIndicatorEnabled = false
+        set1.setDrawHighlightIndicators(false)
+        
+        chartView.drawBordersEnabled = false
+        chartView.drawMarkers = false
+        chartView.legend.enabled = false
+        chartView.leftAxis.enabled = false
+        chartView.rightAxis.enabled = false
+        chartView.xAxis.enabled = false
     }
     
+    
+}
+
+extension WithChartTableViewCell: ChartViewDelegate {
     
 }

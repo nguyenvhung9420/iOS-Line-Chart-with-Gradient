@@ -8,5 +8,7 @@ target 'LineChart' do
   # Pods for LineChart:
   pod 'Charts'
 #  pod 'ChartsRealm'
+  pod 'Starscream', '~> 4.0.0'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end

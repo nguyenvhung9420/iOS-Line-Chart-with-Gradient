@@ -111,6 +111,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ABA258F5272501EC00881825 /* CoinsListView */ = {
+			isa = PBXGroup;
+			children = (
+				0E8A78F42723EBF70082CDBB /* ChartInCellViewController.swift */,
+				0E8A78F52723EBF70082CDBB /* ChartInCellViewController.xib */,
+				ABA258F6272501FA00881825 /* Cells */,
+			);
+			path = CoinsListView;
+			sourceTree = "<group>";
+		};
+		ABA258F6272501FA00881825 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0E8A78F02723A56D0082CDBB /* WithChartTableViewCell.swift */,
+				0E8A78F12723A56D0082CDBB /* WithChartTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ABA258F72725022200881825 /* GrandLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				0EF09CE1271D232E00CA50E6 /* LineChartViewController.swift */,
+				0EF09CE2271D232E00CA50E6 /* LineChartViewController.xib */,
+				0EF09CE5271D26E100CA50E6 /* DemoBaseViewController.swift */,
+			);
+			path = GrandLineChart;
+			sourceTree = "<group>";
+		};
 		D702DD411F4FC52C0057F54F = {
 			isa = PBXGroup;
 			children = (
@@ -141,14 +170,9 @@
 				D702DD541F4FC52C0057F54F /* Assets.xcassets */,
 				D702DD561F4FC52C0057F54F /* LaunchScreen.storyboard */,
 				D702DD591F4FC52C0057F54F /* Info.plist */,
-				0EF09CE1271D232E00CA50E6 /* LineChartViewController.swift */,
-				0EF09CE5271D26E100CA50E6 /* DemoBaseViewController.swift */,
-				0EF09CE2271D232E00CA50E6 /* LineChartViewController.xib */,
+				ABA258F72725022200881825 /* GrandLineChart */,
+				ABA258F5272501EC00881825 /* CoinsListView */,
 				0EF09CE7271D295B00CA50E6 /* Components */,
-				0E8A78F02723A56D0082CDBB /* WithChartTableViewCell.swift */,
-				0E8A78F12723A56D0082CDBB /* WithChartTableViewCell.xib */,
-				0E8A78F42723EBF70082CDBB /* ChartInCellViewController.swift */,
-				0E8A78F52723EBF70082CDBB /* ChartInCellViewController.xib */,
 			);
 			path = LineChart;
 			sourceTree = "<group>";
@@ -246,10 +270,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
